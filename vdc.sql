@@ -1,3 +1,5 @@
+-- VDC
+
 CREATE DATABASE InstaDog; 
 
 CREATE USER 'adminInstadog'@'localhost' IDENTIFIED BY 'Inst@D0g';
