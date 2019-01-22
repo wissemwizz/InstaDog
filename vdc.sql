@@ -50,3 +50,10 @@ CREATE TABLE Comment
     articleId INT (100),
     FOREIGN KEY (articleId) REFERENCES Article(id)
 );
+
+CREATE TABLE raceDog 
+(
+    id INT (100) AUTO_INCREMENT PRIMARY KEY,
+    race VARCHAR(255) NOT NULL
+);
+INSERT INTO raceDog (race) VALUES ("Affenpinscher"), ("Aïdi"), ("Aïnou "),("Airedale Terrier"), ("Akbash"), ("Akita Inu");
