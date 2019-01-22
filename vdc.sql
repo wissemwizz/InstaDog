@@ -19,7 +19,7 @@ CREATE TABLE User
 
 CREATE TABLE Dog
 (
-    id INT NOT NULL PRIMARY KEY,
+    id INT (100) AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(50) NOT NULL,
     race VARCHAR(50) NOT NULL,
     mix bool,
@@ -32,7 +32,7 @@ CREATE TABLE Dog
 
 CREATE TABLE Article
 (
-    id INT NOT NULL PRIMARY KEY,
+    id INT (100) AUTO_INCREMENT PRIMARY KEY,
     image VARCHAR(255) NOT NULL,
     text VARCHAR (255),
     publicationDate VARCHAR (50),
@@ -42,7 +42,7 @@ CREATE TABLE Article
 
 CREATE TABLE Comment 
 (
-    id INT NOT NULL PRIMARY KEY,
+    id INT (100) AUTO_INCREMENT PRIMARY KEY,
     text VARCHAR(255) NOT NULL,
     publicationDate VARCHAR (255),
     userId INT (100),
