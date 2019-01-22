@@ -22,7 +22,7 @@ CREATE TABLE Dog
     id INT (100) AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(50) NOT NULL,
     race VARCHAR(50) NOT NULL,
-    mix bool,
+    mix BOOLEAN,
     birthdate DATE,
     sex VARCHAR,
     image VARCHAR (255),
