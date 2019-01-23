@@ -1,0 +1,32 @@
+
+/* .navbar-inverse {
+    background:  #057c0d; 
+    }
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #f5f381;
+        } 
+        
+.jumbotron {
+    color: #ffffff;  
+    background-color: #40a505;
+    }   */
+* body {
+    background: rgb(189, 176, 176);
+}
+  
+.navbar-inverse .navbar-nav>li>a {  
+    color: #d36600;
+            } 
+            
+.jumbotron {
+        color: #ffffff;  
+        background-color: #7e3d08;
+        border-style: solid;
+    }  
+.navbar-brand {
+}
+.thumbnail img {
+    height: 200px;
+    width: 250px;
+}
