@@ -24,7 +24,7 @@ CREATE TABLE Dog
     race VARCHAR(50) NOT NULL,
     mix BOOLEAN,
     birthdate DATE,
-    sex VARCHAR,
+    sex VARCHAR (50),
     image VARCHAR (255),
     userId INT(100),
   FOREIGN KEY (userId) REFERENCES User(id) 
