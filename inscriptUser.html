@@ -1,37 +1,77 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>inscription</title>
-        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>inscription</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
-    
-    <body>
-        <nav class="navbar navbar-inverse">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo"
-                        aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a href="#" class="navbar-brand">Ma Vie de Chien</a>
-                </div>
-                <div class="collapse navbar-collapse" id="bs-nav-demo">
-                    <ul class="nav navbar-nav">
-                        <li><a href="main.html">ACCUEIL</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="inscriptUser.html">S'Inscrire</a></li>
-                        <li><a href="login.html">Connexion</a></li>
-                    </ul>
-                </div>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">Ma Vie de Chien</a>
             </div>
-        </nav>
-    
+            <div class="collapse navbar-collapse" id="bs-nav-demo">
+                <ul class="nav navbar-nav">
+                    <li><a href="main.html">ACCUEIL</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="inscriptUser.html">S'Inscrire</a></li>
+                    <li><a href="login.html">Connexion</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1>inscription</h1>
+    <form class="formulaire">
+
+
+        <fieldset class="form-group">
+            <label for="first_name">Nom</label>
+            <input type="text" class="form-control" id="first_name" name="first_name" required>
+        </fieldset>
+        <fieldset class="form-group">
+            <label for="last_name">Prenom</label>
+            <input type="text" class="form-control" id="last_name" name="last_name" required>
+        </fieldset>
+        <fieldset class="form-group">
+            <label for="last_name">Pseudo</label>
+            <input type="text" class="form-control" id="nick_name" name="nick_name"required>
+        </fieldset>
+        <form class="form-inline" action="/action_page.php">
+
+            <div class="form-group">
+                <label for="pwd">mot de passe:</label>
+                <input type="password" class="form-control" id="pwd"required>
+            </div>
+            <div class="form-group">
+                <label for="pwd">confirmer mot de passe:</label>
+                <input type="password" class="form-control" id="cpwd"required>
+            </div>
+            <div class="form-group">
+                <label for="email">Addresse Email :</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <button href="main.html" class="btn btn-default">Back</button>
+            <button type="submit" class="btn btn-default">Submit</button>
+
+        </form>
+        
+
+    </form>
+
 </body>
+
 </html>
