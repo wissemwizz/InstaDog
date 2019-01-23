@@ -12,18 +12,24 @@
     background-color: #40a505;
     }   */
 * body {
-    background: #bdb0b0;
+    background: #e2dfdf;
 }
 .navbar{
     min-height: 60px;
 }
 .navbar-inverse .navbar-nav>li>a {  
     color: #7e3d08;
-            } 
+} 
 
 .navbar-inverse .navbar-nav>li>a:hover {  
     color: #030303;
-                        } 
+}
+/* .navbar-inverse .navbar-toggle {  
+    color: #030303;
+}  */
+/* .navbar-inverse .navbar-toggle.collapse {  
+    color: #7e3d08;
+}  */
 .jumbotron {
         color: #ffffff; 
         background-color: #7e3d08;
@@ -41,7 +47,7 @@
 }
 
 .thumbnail{
-    background-color: rgb(189, 176, 176);
+    background-color: #e2dfdf;
     border: none;
 }
 
@@ -49,3 +55,13 @@
     padding-top: -5px;
     height: 30px;
 }
+/* .navbar-toggle collapsed {
+    color:#7e3d08;
+} */
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+ background-color: #DDD;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #7e3d08;
+   }
