@@ -12,27 +12,32 @@
     background-color: #40a505;
     }   */
 * body {
-    background: rgb(189, 176, 176);
+    background: #bdb0b0;
 }
 .navbar{
-    /* min-height: 70px; */
+    min-height: 60px;
 }
 .navbar-inverse .navbar-nav>li>a {  
-    color: #d36600;
+    color: #7e3d08;
             } 
-            
+
+.navbar-inverse .navbar-nav>li>a:hover {  
+    color: #030303;
+                        } 
 .jumbotron {
-        color: #ffffff;  
+        color: #ffffff; 
         background-color: #7e3d08;
         border-style: solid;
+        border-color: black;
     }  
-.navbar-brand {
+.navbar-inverse {
+    background: #ffffff;
 }
 .thumbnail img {
     height: 200px;
     width: 250px;
-    
-
+    border:solid;
+    border-radius: 2%;
 }
 
 .thumbnail{
