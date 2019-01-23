@@ -14,7 +14,9 @@
 * body {
     background: rgb(189, 176, 176);
 }
-  
+.navbar{
+    /* min-height: 70px; */
+}
 .navbar-inverse .navbar-nav>li>a {  
     color: #d36600;
             } 
@@ -29,4 +31,16 @@
 .thumbnail img {
     height: 200px;
     width: 250px;
+    
+
+}
+
+.thumbnail{
+    background-color: rgb(189, 176, 176);
+    border: none;
+}
+
+.logo{
+    padding-top: -5px;
+    height: 30px;
 }
