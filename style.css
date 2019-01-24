@@ -1,3 +1,7 @@
+/* CSS INSTADOG */
+
+
+
 
 /* .navbar-inverse {
     background:  #057c0d; 
@@ -17,12 +21,17 @@
 .navbar{
     min-height: 60px;
 }
+
+/* COULEURS DES INSTRUCTIONS */
 .navbar-inverse .navbar-nav>li>a {  
     color: #7e3d08;
 } 
 
 .navbar-inverse .navbar-nav>li>a:hover {  
     color: #030303;
+}
+.fontBar {
+    font-size: 20px;
 }
 /* .navbar-inverse .navbar-toggle {  
     color: #030303;
@@ -40,8 +49,8 @@
     background: #ffffff;
 }
 .thumbnail img {
-    height: 200px;
-    width: 250px;
+    height: 210px;
+    width: 270px;
     border:solid;
     border-radius: 2%;
 }
