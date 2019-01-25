@@ -82,4 +82,23 @@ h1 {
 }
 p {
     text-align: center;
+    padding: 100px;
+}
+.artc {
+    text-align: left;
+    
+    font-size: large;
+    margin-top: 20px;
+}
+.imgar {
+    height: auto;
+    width: auto;
+    margin-top: 100px;
+    
+    border-radius: 2%;
+    text-align: center;
+}
+.zcomm {
+    margin: 100px;
+    text-align: center;
 }
