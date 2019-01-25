@@ -1,44 +1,120 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>inscription Chien</title>
-        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-            crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    
-    <!-- NAVBAR -->
-    
-    <body>
-        <nav class="navbar navbar-inverse">
-            <div class="container">
-                <div class="navbar-header">
-                    <!-- BURGER -->
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo"
-                        aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <!-- END OF BURGER -->
-                    <a href="#" class="navbar-brand"><img class="logo" src="logo.png" /></a>
-                </div>
-                <div class="collapse navbar-collapse" id="bs-nav-demo">
-                    <ul class="nav navbar-nav">
-                        <li><a href="main.html" class="fontBar"><i class="fas fa-home"></i></a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="inscriptUser.html" class="fontBar">
-                                <i class="fas fa-user-plus"></i> S'Inscrire</a></li>
-                        <li><a href="login.html" class="fontBar"><i class="fas fa-sign-in-alt"></i> Connexion</a></li>
-                    </ul>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>inscription Chien</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<!-- NAVBAR -->
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- BURGER -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- END OF BURGER -->
+                <a href="#" class="navbar-brand"><img class="logo" src="logo.png" /></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-nav-demo">
+                <ul class="nav navbar-nav">
+                    <li><a href="main.html" class="fontBar"><i class="fas fa-home"></i></a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="inscriptUser.html" class="fontBar">
+                            <i class="fas fa-user-plus"></i> S'Inscrire</a></li>
+                    <li><a href="login.html" class="fontBar"><i class="fas fa-sign-in-alt"></i> Connexion</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- TOP CORPUS -->
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Ma Vie de Chien</h1>
+            <p class="lead">Qui c'est le plus beau Toutou du Monde ?</p>
+            </p>
+        </div>
+
+        <form>
+            <div class="form-group row">
+                <label for="inputName" class="col-sm-2 col-form-label">Nom du Toutou</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Nom du Toutou">
                 </div>
             </div>
-        </nav>
+            <div class="form-group row">
+                <label for="birthdate" class="col-sm-2 col-form-label">Date de naissance</label>
+                <div class="col-sm-10">
+                    <input type="birthdate" class="form-control" id="inputbirthdate" placeholder="Date de naissance">
+                </div>
+            </div>
+        </form>
+        <form>
+            <div class="form-group row">
+                <label for="inputRace" class="col-sm-2 col-form-label">Race</label>
+                <div class="col-sm-4 input-group">
+                    <select class="custom-select" id="inputGroupSelect">
+                        <option selected>Race...</option>
+                        <option value="1">Bouledogue</option>
+                        <option value="2">Berger Allemand</option>
+                        <option value="3">Caniche</option>
+                    </select>
+                    <div class="checkbox">
+                        <label class="control-label"><input type="checkbox"> Version Originale</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <!-- <form>
+
+
+            <label for="inputRace" class="col-sm-3 col-form-label">Race</label>
+                    <div class="col-sm-8 input-group">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button">Button</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div> -->
+
+<!-- 
+        <form class="form-inline">
+            <div class="form-group">
+                <label class="sr-only" for="inputEmail">Email</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label class="sr-only" for="inputPassword">Password</label>
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+            </div>
+            <div class="form-check mb-2 mr-sm-2">
+                <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                <label class="form-check-label" for="inlineFormCheck"> Remember me
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Submit</button>
+        </form> -->
+
+
 </body>
+
 </html>
