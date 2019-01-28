@@ -33,6 +33,9 @@
 .fontBar {
     font-size: 20px;
 }
+.radio-inline{
+    font-size: 18px;
+}
 /* .navbar-inverse .navbar-toggle {  
     color: #030303;
 }  */
@@ -44,6 +47,7 @@
         background-color: #7e3d08;
         border-style: solid;
         border-color: black;
+
     }  
 .navbar-inverse {
     background: #ffffff;
@@ -80,9 +84,12 @@
 h1 {
     text-align: center;
 }
+h2 {
+    text-align: center;
+}
 p {
     text-align: center;
-    padding: 100px;
+    padding: 25px;
 }
 .artc {
     text-align: left;
@@ -90,6 +97,7 @@ p {
     font-size: large;
     margin-top: 20px;
 }
+
 .imgar {
     height: auto;
     width: auto;

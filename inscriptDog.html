@@ -44,12 +44,100 @@
     <!-- TOP CORPUS -->
     <div class="container">
         <div class="jumbotron">
-            <h1 class="display-4">Ma Vie de Chien</h1>
+            <h1>inscription Toutou</h1>
+            <h2>Ma Vie de Chien</h2>
+            <p>Qui c'est le plus beau Toutou du Monde ?</p>
+        </div>
+        <!-- FORMULAIRE D'INSCRIPTION -->
+        <div class="form-group">
+            <div class="row">
+                <div class="col-lg-12">
+                    <label for="Nomdutoutou">Nom du Toutou</label>
+                    <input class="form-control" id="nomDuToutou" type="text">
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" checked>C'est une Fi-fille
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio">C'est un p'tit Gars
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="sel1">Race</label>
+                    <select class="form-control" id="sel1">
+                        <option value="Races">Séléctionner la Race</option>
+                        <option value="1">Bouledogue</option>
+                        <option value="2">Berger Allemand</option>
+                        <option value="3">Caniche</option>
+                    </select>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" checked>Pure race
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio">Un peu mélangé...
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="date-input" class="col-6 col-form-label">Date de naissance</label>
+                    <div class="col-4">
+                        <input class="form-control" type="date" value="2011-08-19" id="date-input">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="input-group">
+                    <label for="searchPic">Inserer la photo</label>
+                    <input type="text" class="form-control" placeholder="Rechercher dans mes dossiers">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" type="button">Allez</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <ul class="pager">
+            <li class="previous"><a href="#">Retour</a></li>
+            <li class="next"><a href="#">Valider</a></li>
+        </ul>
+    </div>
+
+    <!-- <form class="form-inline" action="/action_page.php">
+
+            <div class="form-group">
+                <label for="pwd">mot de passe:</label>
+                <input type="password" class="form-control" id="pwd" required>
+            </div>
+            <div class="form-group">
+                <label for="pwd">confirmer mot de passe:</label>
+                <input type="password" class="form-control" id="cpwd" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Addresse Email :</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <button href="main.html" class="btn btn-default">Back </button>
+            <button type="submit" class="btn btn-default">Submit</button>
+
+        </form> -->
+    </div>
+    <!-- <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-2">Ma Vie de Chien</h1>
             <p class="lead">Qui c'est le plus beau Toutou du Monde ?</p>
             </p>
-        </div>
+        </div> -->
 
-        <form>
+    <!-- <form>
             <div class="form-group row">
                 <label for="inputName" class="col-sm-2 col-form-label">Nom du Toutou</label>
                 <div class="col-sm-10">
@@ -62,28 +150,31 @@
                     <input type="birthdate" class="form-control" id="inputbirthdate" placeholder="Date de naissance">
                 </div>
             </div>
-        </form>
-        <form>
-            <div class="form-group row">
-                <label for="inputRace" class="col-sm-2 col-form-label">Race</label>
-                <div class="col-sm-4 input-group">
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Race<span class="caret">
+                    </span></button>
+                <ul class="dropdown-menu">
                     <select class="custom-select" id="inputGroupSelect">
                         <option selected>Race...</option>
                         <option value="1">Bouledogue</option>
                         <option value="2">Berger Allemand</option>
                         <option value="3">Caniche</option>
                     </select>
-                    <div class="checkbox">
-                        <label class="control-label"><input type="checkbox"> Version Originale</label>
-                    </div>
-                    <div class="col-sm-6">
-                        <button type="submit" class="btn btn-primary">Login</button>
-                    </div>
-                </div>
+                </ul>
             </div>
-        </form>
+            <div class="col-sm-4 input-group">
 
-        <!-- <form>
+                <div class="checkbox">
+                    <label class="control-label"><input type="checkbox"> Version Originale</label>
+                </div>
+                <div class="col-sm-6">
+                    <button type="submit" class="btn btn-primary">Valider</button>
+                </div>
+
+            </div>
+        </form> -->
+
+    <!-- <form>
 
 
             <label for="inputRace" class="col-sm-3 col-form-label">Race</label>
@@ -96,7 +187,7 @@
 
             </div> -->
 
-<!-- 
+    <!-- 
         <form class="form-inline">
             <div class="form-group">
                 <label class="sr-only" for="inputEmail">Email</label>
