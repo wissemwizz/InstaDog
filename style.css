@@ -1,20 +1,5 @@
 /* CSS INSTADOG */
 
-
-
-
-/* .navbar-inverse {
-    background:  #057c0d; 
-    }
-
-.navbar-inverse .navbar-nav>li>a {
-    color: #f5f381;
-        } 
-        
-.jumbotron {
-    color: #ffffff;  
-    background-color: #40a505;
-    }   */
 * body {
     background: #e2dfdf;
 }
@@ -36,12 +21,7 @@
 .radio-inline{
     font-size: 18px;
 }
-/* .navbar-inverse .navbar-toggle {  
-    color: #030303;
-}  */
-/* .navbar-inverse .navbar-toggle.collapse {  
-    color: #7e3d08;
-}  */
+
 .jumbotron {
         color: #ffffff; 
         background-color: #7e3d08;
@@ -87,6 +67,14 @@ h1 {
 h2 {
     text-align: center;
 }
+.btn{
+    margin-bottom: -25px;
+    background: #7e3d08;
+}
+.btn:hover{
+    background: #030303;
+}
+
 p {
     text-align: center;
     padding: 25px;
