@@ -1,6 +1,7 @@
 /* CSS INSTADOG */
 
 * body {
+    padding: 0;
     background: #e2dfdf;
 }
 .navbar{
@@ -48,9 +49,7 @@
     padding-top: -5px;
     height: 30px;
 }
-/* .navbar-toggle collapsed {
-    color:#7e3d08;
-} */
+
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
  background-color: #DDD;
@@ -67,30 +66,47 @@ h1 {
 h2 {
     text-align: center;
 }
-.btn{
-    margin-bottom: -25px;
+h3 {
+    text-align: center;
+    font-style: oblique;
+    padding: 20px;
+    text-shadow: #7e3d08 1px 1px;
+}
+.btn-primary{
     background: #7e3d08;
 }
 .btn:hover{
     background: #030303;
 }
-
+.searchButton{
+    margin-bottom: -25px;
+}
 p {
     text-align: center;
     padding: 25px;
 }
-.artc {
-    text-align: left;
-    
-    font-size: large;
-    margin-top: 20px;
-}
 
+.artc {
+    text-align: left;  
+    font-size: large;
+    margin-top: 20px; 
+}
+.userName {
+    background-color: #ff6804;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.answer {
+    font-size: 18px;
+}
 .imgar {
     height: auto;
     width: auto;
-    margin-top: 100px;
-    
+    margin-top: 100px; 
     border-radius: 2%;
     text-align: center;
 }
@@ -98,3 +114,23 @@ p {
     margin: 100px;
     text-align: center;
 }
+
+.compte-chien-img{
+    border:5px solid white;
+    object-fit:cover;
+    padding:0px;
+}
+
+.posDog{
+    position:relative;
+    
+}
+.raceDetails{
+    flex-grow: right;
+}
+.suppression{
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
