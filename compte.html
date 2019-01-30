@@ -53,14 +53,14 @@
         <div class="container">
             <div class="row-wrap">
                 <div class="col-md-3">
-                    <label class="answer">Ajouter un Toutou ?</label>
+                    <label class="answer">Ajouter un Toutou</label>
                 </div>
                 <div class="col-md-3">
                     <button type="button" class="btn btn-primary btn-lg">Ajouter</button>
                 </div>
 
                 <div class="col-md-3">
-                    <label class="answer">Modifier mon Compte ?</label>
+                    <label class="answer">Modifier mon Compte</label>
                 </div>
                 <div class="col-md-3">
                     <button type="button" class="btn btn-primary btn-lg">Modifier</button>
@@ -75,10 +75,10 @@
         <div class="jumbotron posDog col-lg-12">
             <div class="row">
                 <div class="col-lg-6 col-xs-6">
-                        <label class="nameDetails" for="dogName">Barnabé</label>
+                    <label class="nameDetails" for="dogName">Barnabé</label>
                 </div>
                 <div class="col-lg-6 text-right col-xs-6">
-                        <label class="raceDetails" for="race">Berger Allemand</label>    
+                    <label class="raceDetails" for="race">Berger Allemand</label>
                 </div>
             </div>
             <img src="http://www.hdbilder.eu/pictures/2013/0316/1/german-shepherd-dog-puppy-babies-faces-eyes-images-189390.jpg"
@@ -87,8 +87,29 @@
                 <button type="button" class="btn btn-warning btn-lg suppression">Supprimer le profil</button>
             </div>
         </div>
+        <div>
+        <div class="container">
+            <form class="form-inline" action="/action_page.php">
+                <div class="form-group">
+                    <label for="last_name">Pseudo :</label>
+                    <input type="nick_name" class="form-control" id="nick_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="pwd">mot de passe:</label>
+                    <input type="password" class="form-control" id="pwd" required>
+                </div>
+                <div class="form-group">
+                    <label for="pwd">confirmer mot de passe:</label>
+                    <input type="password" class="form-control" id="cpwd" required>
+                </div>
+                <button href="main.html" class="btn btn-default">Back </button>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
     </div>
     </div>
+
+
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>

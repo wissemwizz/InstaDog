@@ -2,7 +2,10 @@
 
 * body {
     padding: 0;
+    margin-top: 10px;
+    margin-bottom: 30px;
     background: #e2dfdf;
+    font-size: 18px;
 }
 .navbar{
     min-height: 60px;
@@ -30,6 +33,7 @@
         border-color: black;
 
     }  
+
 .navbar-inverse {
     background: #ffffff;
 }
@@ -44,7 +48,9 @@
     background-color: #e2dfdf;
     border: none;
 }
-
+#date-input {
+    line-height: 20px;
+}
 .logo{
     padding-top: -5px;
     height: 30px;
@@ -62,6 +68,8 @@
 }
 h1 {
     text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
 }
 h2 {
     text-align: center;
@@ -71,19 +79,39 @@ h3 {
     font-style: oblique;
     padding: 20px;
     text-shadow: #7e3d08 1px 1px;
+    margin-bottom: 20px;
 }
 .btn-primary{
     background: #7e3d08;
 }
+.btn-primary:hover{
+    background: #fff;
+    border-color: #ff6804;
+}
 .btn:hover{
     background: #030303;
 }
-.searchButton{
-    margin-bottom: -25px;
+.btn-group-lg > .btn, .btn-lg {
+    font-size: 20px;
+    background-color: #ff6804;
+}
+a{
+    color: #7e3d08;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    color: #030303;
+}
+.pager li > a {
+    border: 1px solid #7e3d08;
+}
+.pager li > a:hover {
+    border: 1px solid #030303;
 }
 p {
     text-align: center;
-    padding: 25px;
+    padding: 15px;
 }
 
 .artc {
@@ -125,12 +153,20 @@ p {
     position:relative;
     
 }
-.raceDetails{
-    flex-grow: right;
-}
-.suppression{
-    margin-top: 30px;
-    padding: 10px;
-    text-align: center;
+.nameDetails{
+    font-style: oblique;
+    background: #ff6804;
 }
 
+.pedigree{
+    margin-bottom: 6%;
+}
+.suppression{
+    margin-top: 5%;
+    padding: 2%;
+    text-align: center;
+}
+.rechercheArticle {
+    text-shadow: #2a2a2a 1px 1px;
+    font-style: oblique;
+}
