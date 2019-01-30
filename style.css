@@ -77,9 +77,17 @@ h2 {
 h3 {
     text-align: center;
     font-style: oblique;
-    padding: 20px;
+    padding: 10px;
     text-shadow: #7e3d08 1px 1px;
     margin-bottom: 20px;
+}
+h4 {
+    margin-top: -10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-style: oblique;
+    padding: 10px;
+    text-shadow: #7e3d08 1px 1px;
 }
 .btn-primary{
     background: #7e3d08;
@@ -91,10 +99,18 @@ h3 {
 .btn:hover{
     background: #030303;
 }
+.nameDetails.pedigree{
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 3px;
+    border-color: #030303;
+    border-style: none;
+}
 .btn-group-lg > .btn, .btn-lg {
-    font-size: 20px;
+    font-size: 25px;
     background-color: #ff6804;
 }
+
 a{
     color: #7e3d08;
     text-decoration: none;
