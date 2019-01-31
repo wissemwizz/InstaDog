@@ -1,3 +1,4 @@
+/* STYLE.CSS */
 
 * body{
     padding: 0px;
@@ -5,4 +6,55 @@
     margin-bottom: 30px;
     background: #e2dfdf;
     font-size: 18px;
+}
+
+/* NAVBAR */
+
+.logo {
+    height: 30px;
+}
+.navbar {
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/* JUMBOTRON */
+
+.jumbotron {
+    padding: 50px;
+    margin-top: 20px;
+    color: #ffffff; 
+    background-color: #7e3d08;
+    border-style: solid;
+    border-radius: 6px;
+    border-color: black;
+}
+.devise {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+h2 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+    font-style: oblique;
+    padding: 10px;
+    text-shadow: #7e3d08 1px 1px;
+    margin-bottom: 20px;
+}
+h4 {
+    font-size: 28px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-style: oblique;
+    padding: 10px;
+    text-shadow: #7e3d08 1px 1px;
 }
