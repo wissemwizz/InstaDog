@@ -25,7 +25,9 @@
 .radio-inline{
     font-size: 18px;
 }
-
+.fakeimg{
+    max-width: 100%;
+}
 .jumbotron {
         color: #ffffff; 
         background-color: #7e3d08;
@@ -33,7 +35,18 @@
         border-color: black;
 
     }  
-
+.jumbotron.insertion {
+    margin-top: 60px;
+    background-color: unset;
+    border-style: double;
+    border-color: #ff6804;
+}
+.jumbotron.articleFixe{
+    margin-top: 60px;
+    background-color: unset;
+    border-style: double;
+    border-color: black;
+}
 .navbar-inverse {
     background: #ffffff;
 }
@@ -74,12 +87,24 @@ h1 {
 h2 {
     text-align: center;
 }
+.mt-3{
+    color: #030303;
+}
 h3 {
     text-align: center;
     font-style: oblique;
     padding: 10px;
     text-shadow: #7e3d08 1px 1px;
     margin-bottom: 20px;
+}
+.insertTitle {
+    text-align: center;
+    font-style: oblique;
+    padding: 0;
+    text-shadow: #030303 1px 1px;
+    color: #ff6804;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 h4 {
     font-size: 28px;
@@ -111,7 +136,13 @@ h4 {
     font-size: 25px;
     background-color: #ff6804;
 }
-
+.btn-lg {
+    text-align: center;
+    margin-top: 10px;
+}
+.insertion p{
+    color: #030303;
+}
 a{
     color: #7e3d08;
     text-decoration: none;
