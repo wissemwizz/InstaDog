@@ -218,3 +218,11 @@ p {
     text-shadow: #2a2a2a 1px 1px;
     font-style: oblique;
 }
+.contentt {
+    margin: 10%;
+    padding: 2%;
+}
+.comntees {
+    text-align: left;
+    font-size: small;
+}
