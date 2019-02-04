@@ -20,11 +20,11 @@ CREATE TABLE User
 CREATE TABLE Dog
 (
     id INT (100) AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(50) NOT NULL,
+    nameDog VARCHAR(50) NOT NULL,
     race VARCHAR(50) NOT NULL,
     mix BOOLEAN,
     birthdate DATE,
-    sex VARCHAR (50),
+    gender VARCHAR (50),
     image VARCHAR (255),
     userId INT(100),
   FOREIGN KEY (userId) REFERENCES User(id) 
