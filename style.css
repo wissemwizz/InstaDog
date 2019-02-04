@@ -162,11 +162,6 @@ p {
     padding: 15px;
 }
 
-.artc {
-    text-align: left;  
-    font-size: large;
-    margin-top: 20px; 
-}
 .userName {
     background-color: #ff6804;
 }
@@ -205,7 +200,9 @@ p {
     font-style: oblique;
     background: #ff6804;
 }
-
+.presentation{
+    font-style: oblique;
+}
 .pedigree{
     margin-bottom: 6%;
 }
@@ -219,10 +216,21 @@ p {
     font-style: oblique;
 }
 .contentt {
+    color: #030303;
     margin: 10%;
     padding: 2%;
+}
+.artc {
+    text-align: left;  
+    font-size: large;
+    margin-top: 20px; 
+    line-height: 2;
+    padding: 0;
 }
 .comntees {
     text-align: left;
     font-size: small;
+}
+.detailsCol {
+    color: #030303;
 }
