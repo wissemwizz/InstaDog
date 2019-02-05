@@ -1,23 +1,22 @@
 <?php
 require('connexion.php');
 
-
 $connexion_obj = new Connexion();
 
-$connexion = $connexion_obj->getConnnexion();
+$connexion = $connexion_obj->getConnexion();
 
 if($connexion != null) {
 
-    echo "ok";
+    echo " Ouai c'est ça! Tout fonctionne bien mais ne la ramène pas trop pour l'instant !";
 
-   echo $connexion_obj->insertPersonne("Paul", "Hemique", "non definie", "2012-02-02", "marie");
-
+//    echo $connexion_obj->insertUser("Paul", "Hemique", "Polémique24", "tartempion", "2019.02.04");
+    
+    // echo $connexion_obj->getDog($id);
 
     echo "</pre>";
-
 }   
 else {
-    echo "connexion BD échouée";
+    echo "MAIS QU'EST-CE QUE TU FOUT??? ta connexion BD a échouée";
 
   }
 
