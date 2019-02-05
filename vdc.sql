@@ -3,7 +3,7 @@
 CREATE DATABASE InstaDog; 
 
 CREATE USER 'adminInstadog'@'localhost' IDENTIFIED BY 'Inst@D0g';
-GRANT ALL ON Instadog.* TO 'adminInstadog'@'localhost';
+GRANT ALL ON InstaDog.* TO 'adminInstadog'@'localhost';
 FLUSH PRIVILEGES;
 
 CREATE TABLE User
