@@ -32,26 +32,29 @@ class Connexion {
 
 // INSERTION NOUVEL UTILISATEUR
 
-public function insertUser($firstName, $lastName, $userName, $passwordUser, $dateConnect) {
+public function insertUser($firstName, $lastName, $userName, $passwordUser, $dateConnect, $mailAdress) {
 
     $requete_prepare = $this->connexion->prepare(
         "INSERT INTO User (firstName, 
                             lastName, 
                             userName, 
                             passwordUser, 
-                            dateConnect) 
+                            dateConnect,
+                            mailAdress) 
         values (:firstName, 
                 :lastName, 
                 :userName, 
                 :passwordUser, 
-                :dateConnect)"
+                :dateConnect,
+                mailAdress)"
     );
     $requete_prepare->execute(
         array(  'firstName' => "$firstName", 
                 'lastName' => "$lastName", 
                 'userName' => "$userName", 
                 'passwordUser' => "$passwordUser", 
-                'dateConnect' => "$dateConnect"
+                'dateConnect' => "$dateConnect",
+                'mailAdress)' => "$mailAdress"
             )
     );
 }
@@ -86,11 +89,9 @@ public function insertUser($firstName, $lastName, $userName, $passwordUser, $dat
    }
 
 
-    public function getDogOfUser($idUser){
-        $stmt->execute(array("idUser", $isUser));
+    public function getDogbyUserId($idUser){
+        $stmt->execute(array("idUser", $idUser));
     }
-
-
 
     public function getDog($id){
         $stmt=$connexion->prepare(
