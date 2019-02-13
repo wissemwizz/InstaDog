@@ -1,22 +1,27 @@
 <?php
-require('connexion.php');
 
-$instaDogs=     new Connexion();
 
-$firstName=     $_POST['nomFamille'];
-$lastName=      $_POST['prénom'];
-$userName=      $_POST['pseudo'];
-$passwordUser=  $_POST['pwd'];
+
+
+
+
+
+$firstName = $_POST['nomFamille'];
+$lastName = $_POST['prenom'];
+$userName = $_POST['pseudo'];
+$passwordUser= $_POST['pwd'];
 $confirmPassword=$_POST['cpwd'];
-$dateConnect=   $_POST['dateConnect'];
-$mailAdress=    $_POST['email'];
+$mailAdress= $_POST['email'];
+
+require('connexion.instadog.php');
+$instaDogs= new Connexion();
 
 if($passwordUser === $confirmPassword){ 
-insertUser ($firstName, $lastName, $userName, $passwordUser, $dateConnect, $mailAdress);}
+$instaDogs->insertUser($lastName, $firstName, $userName, $passwordUser, date("Y.m.a"), $mailAdress);
+}
 else{
 echo "Veuillez remplir tous les Champs";
 }
-
 
 
 ?>

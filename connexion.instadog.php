@@ -14,10 +14,10 @@ class Connexion {
         $PARAM_utilisateur='adminInstadog';
         $PARAM_mot_passe='Inst@D0g';
         
-        try{
-            
-            $this->connexion = new PDO(
-                'mysql:host='.$PARAM_hote.';dbname='.$PARAM_nom_bd,$PARAM_utilisateur,$PARAM_mot_passe);
+        try{$this->connexion = new PDO(
+                'mysql:host='.$PARAM_hote.';dbname='.$PARAM_nom_bd,
+                $PARAM_utilisateur,
+                $PARAM_mot_passe);
             
         }catch(Exception $e){
 
@@ -25,38 +25,37 @@ class Connexion {
             echo 'N° : '.$e->getCode();         
         }
     }
-
     public function getConnexion(){
         return $this->connexion;
     }
 
 // INSERTION NOUVEL UTILISATEUR
 
-public function insertUser($firstName, $lastName, $userName, $passwordUser, $dateConnect, $mailAdress) {
+public function insertUser($lastName, $firstName, $userName, $passwordUser, $dateConnect, $mailAdress) {
 
     $requete_prepare = $this->connexion->prepare(
-        "INSERT INTO User (firstName, 
+        "INSERT INTO User ( firstName,
                             lastName, 
                             userName, 
                             passwordUser, 
                             dateConnect,
                             mailAdress) 
-        values (:firstName, 
-                :lastName, 
-                :userName, 
-                :passwordUser, 
-                :dateConnect,
-                mailAdress)"
+        values (:prenom,
+                :nom, 
+                :pseudo, 
+                :motpass, 
+                :dateconnex,
+                :email)"
     );
     $requete_prepare->execute(
-        array(  'firstName' => "$firstName", 
-                'lastName' => "$lastName", 
-                'userName' => "$userName", 
-                'passwordUser' => "$passwordUser", 
-                'dateConnect' => "$dateConnect",
-                'mailAdress)' => "$mailAdress"
+        array(  'prenom' => $firstName, 
+                'nom' => $lastName,
+                'pseudo' => $userName, 
+                'motpass' => $passwordUser, 
+                'dateconnex' => $dateConnect,
+                'email' => $mailAdress
             )
-    );
+    ); 
 }
 
 // INSERTION NOUVEAU CHIEN
@@ -103,6 +102,9 @@ public function insertUser($firstName, $lastName, $userName, $passwordUser, $dat
     }   
 
 }
+
+// CLASS OBJET
+
 class User {
     private $id;
     private $firstName;
@@ -125,6 +127,8 @@ class User {
 }
 
 
+// CLASS OBJET
+
 class Dog{
     private $id;
     private $nameDog;
@@ -145,6 +149,8 @@ class Dog{
            
 }
 
+// CLASS TABLEAU
+
 class Article {
     private $id;
     private $image;
@@ -157,6 +163,8 @@ class Article {
     public function getText(){return $this->text;}
     public function getPublicationDate(){return $this->publicationDate;}
 }
+
+// CLASS TABLEAU
 
 class Comment {
     private $id;
@@ -172,6 +180,8 @@ class Comment {
 
         
 }
+
+// CLASS OBJET
 
 class raceDog {
     private $id;

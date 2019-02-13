@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -11,6 +12,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 
 <!-- NAVBAR -->
 
@@ -42,39 +44,39 @@
         </div>
     </nav>
     <h1>inscription</h1>
-    <form class="formulaire">
+    <form action="formulaire-action.php" method="POST">
 
 
         <fieldset class="form-group">
             <label for="last_name">Nom</label>
-            <input type="text" class="form-control" id="last_name" name="lastName" required>
-        </fieldset>
+            <input type="text" class="form-control" id="last_name" name="nomFamille" required>
+        </fieldset>s
         <fieldset class="form-group">
             <label for="first_name">Prénom</label>
-            <input type="text" class="form-control" id="first_name" name="firstName" required>
+            <input type="text" class="form-control" id="first_name" name="prenom" required>
         </fieldset>
         <fieldset class="form-group">
             <label for="last_name">Pseudo</label>
             <input type="text" class="form-control" id="nick_name" name="pseudo" required>
         </fieldset>
-        <form class="form-inline" action="/action_page.php">
+        
 
             <div class="form-group">
                 <label for="pwd">mot de passe:</label>
-                <input type="password" class="form-control" id="pwd" required>
+                <input type="password" class="form-control" id="pwd" name="pwd" required>
             </div>
             <div class="form-group">
                 <label for="pwd">confirmer mot de passe:</label>
-                <input type="password" class="form-control" id="cpwd" required>
+                <input type="password" class="form-control" id="cpwd" name="cpwd" required>
             </div>
             <div class="form-group">
                 <label for="email">Addresse Email :</label>
-                <input type="email" class="form-control" id="email" required>
+                <input type="email" class="form-control" id="email" name="email" required>
             </div>
             <button href="main.html" class="btn btn-default">Back </button>
             <button type="submit" class="btn btn-default">Submit</button>
 
-        </form>
+        
 
 
     </form>
