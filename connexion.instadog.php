@@ -56,6 +56,9 @@ public function insertUser($lastName, $firstName, $userName, $passwordUser, $dat
                 'email' => $mailAdress
             )
     ); 
+    $id=$this->connexion->lastInsertId();
+    return $id;
+    // var_dump($requete_prepare->errorInfo());
 }
 
 // INSERTION NOUVEAU CHIEN
@@ -99,8 +102,27 @@ public function insertUser($lastName, $firstName, $userName, $passwordUser, $dat
             INNER JOIN User u
             ON d.idUser=u.id"
             );
-    }   
-
+    } 
+    
+    // CREATION DE FONCTION 
+    
+    //1 creation fonction
+    public function selectUserById($id){
+    //2 prepare la requete
+        $stmt=$connexion->prepare(
+            "SELECT *
+            FROM User
+            WHERE id=:id"
+        );
+    //3 execute la requete
+        $stmt->execute(
+            array('id'=>$id)
+        );
+        // 4 Recuperation resultat et stockage ds variable
+        $user=$stmt->fetchObject('User');
+        // 5 retourne la variable (reslutat)
+        return $user;
+    }
 }
 
 // CLASS OBJET

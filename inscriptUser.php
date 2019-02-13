@@ -43,14 +43,16 @@
             </div>
         </div>
     </nav>
+    <div class="container">
     <h1>inscription</h1>
-    <form action="formulaire-action.php" method="POST">
+    
+        <form action="formulaire-action.php" method="POST">
 
 
         <fieldset class="form-group">
             <label for="last_name">Nom</label>
             <input type="text" class="form-control" id="last_name" name="nomFamille" required>
-        </fieldset>s
+        </fieldset>
         <fieldset class="form-group">
             <label for="first_name">Prénom</label>
             <input type="text" class="form-control" id="first_name" name="prenom" required>
@@ -59,8 +61,6 @@
             <label for="last_name">Pseudo</label>
             <input type="text" class="form-control" id="nick_name" name="pseudo" required>
         </fieldset>
-        
-
             <div class="form-group">
                 <label for="pwd">mot de passe:</label>
                 <input type="password" class="form-control" id="pwd" name="pwd" required>
@@ -76,11 +76,8 @@
             <button href="main.html" class="btn btn-default">Back </button>
             <button type="submit" class="btn btn-default">Submit</button>
 
-        
-
-
-    </form>
-
+        </form>
+    </div>
 </body>
 
 </html>

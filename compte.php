@@ -41,11 +41,35 @@
             </div>
         </div>
     </nav>
+    <?php
+
+    // 1 recuperer id dans URL
+    header('Location:compte.php?='.$id);
+    // 2 importer le fichier
+    require('connexion.instadog.php');
+    // 3 creer objet connection
+    $pseudo = new Connexion();
+    // 4 appeler la fonction + stockage result ds variable
+    if (isset($_GET['id'])){
+        $userName= $profilCompte->selectUserById($_GET["id"]);
+        if ($pseudo) {
+            $result = intval($pseudo->id); //acceptation ou refus d'accès si id non valide ou forcé
+        } else {
+            echo "ERROR 404";
+            die();
+    }
+    // 5 getter sur le userName stocké dans une nouvelle variable
+    // 6 ajouter au href
+     
+
+    ?>
     <!-- TOP CORPUS -->
     <div class="container">
         <div class="jumbotron">
             <h1>Bienvenue</h1>
-            <p class="userName" href="">SpongeBob75</p>
+            <form action="connexion.instadog.php" method="GET"> 
+            <p class="userName" href=""><?php echo $profilCompte->$pseudo;?></p>
+            </form>
         </div>
         <div>
             <h3>Que souhaites-tu faire ?</h3>

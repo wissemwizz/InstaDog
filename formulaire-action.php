@@ -1,11 +1,6 @@
 <?php
 
 
-
-
-
-
-
 $firstName = $_POST['nomFamille'];
 $lastName = $_POST['prenom'];
 $userName = $_POST['pseudo'];
@@ -17,11 +12,11 @@ require('connexion.instadog.php');
 $instaDogs= new Connexion();
 
 if($passwordUser === $confirmPassword){ 
-$instaDogs->insertUser($lastName, $firstName, $userName, $passwordUser, date("Y.m.a"), $mailAdress);
+    $id=$instaDogs->insertUser($lastName, $firstName, $userName, $passwordUser, date("Y-m-d"), $mailAdress);
+    // AFFICHAGE DIRECTEMENT DANS LA PAGE CONCERNEE
+    header('Location:compte.php?id='.$id);
+}else{
+    echo "Veuillez remplir tous les Champs";
 }
-else{
-echo "Veuillez remplir tous les Champs";
-}
-
 
 ?>
